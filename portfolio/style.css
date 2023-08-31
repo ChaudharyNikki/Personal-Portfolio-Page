@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    font-family: cursive;  
+    color: #ffffff; 
+}
+
+body{
+    background-color: #000000;
+}
+
+/* ---------------------------- header section ----------------------------- */
+
+.navbar{
+    height: 7em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 150px;
+    font-size: 60px;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0px 4px 8px 0px #323130;
+}
+
+.menu{
+    display: flex;
+    margin-left: 300px;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu ul li a:hover{
+    color: #e8054d;
+}
+
+
+/* -------------------------------- Home section ------------------------ */
+
+
+.home{
+    height: 620px;
+    width: 100%;
+    display: flex;
+    
+}
+.left{
+    width: 50%; 
+    margin-top: 8%;
+    margin-left: 100px;
+    font-size: 45px;
+    font-style: oblique;
+    letter-spacing: 2px;   
+}
+
+.left p{  
+    font-size: 25px;
+    font-style: italic;
+}
+
+.left h1{
+    font-size: 70px;
+}
+
+.left span{
+    color: #1bb8df;
+}
+
+.left .CV a{
+    padding: 15px;
+    border: 2px solid #323130;
+    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.left .CV a:hover{
+    background-color: #e8054d;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+}
+
+.right img{
+    margin-top: 60px;
+    margin-left: 10px;
+    height: 570px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.right img:hover{
+    transform: translate(10px);
+}
+
+
+/* -------------------------- about section ---------------------------------- */
+
+
+.about{
+    height: 730px;
+    width: 100%;
+    display: flex;
+}
+
+.about-image{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin-left: 30px;
+}
+
+.about-image img{
+    margin-top: 10%;
+    height: 630px;
+    width: 55%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.about-image img:hover{
+    transform: translate(10px);
+}
+
+.about-me{ 
+    width: 60%;   
+}
+
+.about-me h1{
+    margin-top: 15%;
+    font-size: 50px;
+    text-align: centre;
+    text-decoration: underline 2px ;
+    font-family: cursive;
+}
+
+.about-me p{
+    margin-top: 10px;
+    margin-right: 21px;
+    font-size: 23px;
+}
+
+
+/* --------------------- skills section --------------------------- */
+
+
+.skills{
+    height: 520px;
+    width: 100%;
+}
+
+.skills-heading h1{
+    font-size: 60px;
+    text-decoration: underline 2px ;
+    margin-left: 100px;
+}
+
+.skills-list{
+    height: 460px;
+    margin: 40px 80px 0 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills-list div{
+    background: rgb(50, 49, 49);
+    height: 360px;
+    width: 19%;
+    border: 2px solid #323130;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.skills-list div:hover{
+    background-color: #e8054d;
+    transform: translateY(-15px);
+}
+
+.skills-list div i{
+    font-size: 50px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.skills-list div h3{
+    font-size: 26px;
+    margin-left: 5px;
+}
+
+.skills-list div p{
+    font-size: 17px;
+    margin: 9px 3px 0px 10px;
+    
+}
+
+
+/* --------------------- project section------------------------ */
+
+
+.projects{
+    height: 620px;
+    width: 100%;
+}
+
+.projects-heading h1{
+    font-size: 60px;
+    text-decoration: underline 2px ;
+    margin-left: 100px;
+}
+
+.project-list{
+    height: 600px;
+    display: flex;
+}
+
+.project-images{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-images img{
+    height: 440px;
+    width: 75%;
+    margin: 40px 0px 0px 80px ;
+    border: 1px solid #323130;
+    border-radius: 10px;
+}
+
+.project-text {
+    margin-left: 80px;
+    width: 75%;
+    height: 0;
+    background: linear-gradient(25deg,rgba(0,0,0,0.5),#e8054d);
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.project-text h3{
+    font-size: 40px;
+    text-decoration: underline 2px;
+    margin-bottom: 10px;
+}
+
+.project-images:hover .project-text{
+    height: 74%;
+}
+
+
+/* ----------------------------contact section----------------------------- */
+
+
+.contact-me{
+    height: 600px;
+    width: 100%;
+}
+
+.contact-me h1{
+    font-size: 60px;
+    text-decoration: underline 2px ;
+    margin-left: 100px;
+}
+
+.contact-details{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.contact-details input{
+    height: 40px;
+    width: 47%;
+    margin-top: 10px;
+    color: black;
+}
+
+.contact-details #msg{
+    margin-top: 10px;
+    height: 200px;
+    width: 95%;
+    color: #000000;
+}
+
+.contact-details button{
+    margin-top: 5px;
+    width: 10%;
+    padding: 10px;
+    background-color: #e8054d;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-details button:hover, button:active{
+    transform: scale(1.1);
+}
+
+.social-icons{
+    margin: 30px 30px 40px 110px;
+    display: flex;
+    font-size: 30px;
+}
+
+.icons a{
+    margin-left: 20px;
+    letter-spacing: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icons a i:hover,.icons a i:active{
+    transform: scale(1.3);
+}
+
+/* --------------- footer section ---------------- */
+
+
+.copyright{
+    width: 98.5%;
+    padding: 10px;
+    text-align: center;
+    background: #323130;
+}
+
+
+/* -------------------------- for small screens---------------- */
+
+/* --------header--------- */
+@media only screen and (max-width:1000px){
+    .navbar{
+        height: 5em;
+    }
+    .logo{
+        margin-left: 15px;
+        font-size: 30px;
+    }
+    .menu{
+        margin-left: 5px;
+    }
+    .menu ul li{
+        margin-left: 1px;
+    }
+    .menu ul li a{
+        font-size: 9px;
+        margin-right: 0px;
+
+    }
+}
+
+/* ------------home section---------- */
+
+@media only screen and (max-width:1000px){    
+    .home{
+        height: 350px;
+    }
+    .left{
+        width: 60%;
+        margin-left: 10px;
+    }
+    .left h1{
+        font-size: 30px;
+    }
+    .left p{
+        font-size: 10px;
+    }
+    .left .CV a{
+        padding: 7px;
+        font-size: 10px;
+    }
+    .right{
+        width: 39%;    
+    } 
+    .right img{
+        height: 200px;
+    }
+}
+
+/* -------------------about section------------ */
+
+@media only screen and (max-width:1000px){
+    .about{
+        height: 350px;
+    }
+    .about-image{
+        width: 40%;
+    }
+    .about-image img{
+        margin-left: 10px;
+        height: 330px;
+        width: 100%;
+    }
+    .about-me{
+        width: 60%;
+        margin: 10px 0px 0px 15px;
+    }
+    .about-me h1{
+        font-size: 25px;
+    }
+    .about-me p{
+        font-size: 9px;
+    }
+}
+
+/* ----------------skills section------------- */
+
+@media only screen and (max-width:1000px){
+    .skills{
+        height: 670px;
+    }
+    .skills-heading h1{
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    .skills-list {
+        margin-top: 10px;
+        margin-left: 2px;
+        margin-right: 0;
+    }
+    .skills-list div {
+        margin-top: 15px;
+        margin-left: 5px;
+        height: 180px;
+        width: 45%;
+    }
+    .skills-list div i{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .skills-list div h3{
+        font-size: 15px;
+    }
+    .skills-list div p{
+        font-size: 10px;
+    }
+}
+
+/* ----------------project section */
+
+@media only screen and (max-width:1000px){
+    .projects{
+        height: 320px;
+    }
+    .projects-heading h1{
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    .project-images img{
+        margin-left: 10px;
+        height: 200px;
+        width: 100%;
+    }
+    .project-text {
+        margin-left: 10px;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        bottom: 0;
+    }
+    .project-images:hover .project-text{
+        height: 34%;
+    }
+    .project-text h3{
+        font-size: 15px;
+    }
+    .project-text p{
+        font-size: 10px;
+    }
+}
+
+/* ---------contact section----------- */
+
+@media only screen and (max-width:1000px){
+    .contact-me{
+        height: 500px;
+    }
+    .contact-me h1{margin-left: 10px;
+        font-size: 25px;
+    }
+    .contact-details{
+        margin-left: 10px;
+    }
+    .contact-details button{
+        width: 30%;
+    }
+    .social-icons {
+        margin: 2px ;
+    }
+    .social-icons p{
+        font-size: 10px;
+    }
+    .social-icons a{
+        margin-left: 1px;
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+}
+
+/* -----------------footer section------------ */
+
+@media only screen and (max-width:1000px){
+    .copyright{
+        font-size: 10px;
+    }
+}
